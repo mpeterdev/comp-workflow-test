@@ -1,0 +1,14 @@
+name: Deploy Widgets to Mainnet
+on:
+  push:
+    branches: [main]
+jobs:
+  deploy-mainnet:
+    uses: mpeterdev/bos-deploy-workflow/.github/workflows/deploy-mainnet.yml@main
+    with:
+      cli-version: 0.2.5
+      deploy-account-address: mpmain2.near
+      signer-account-address: mpmain2.near
+      signer-public-key: ed25519:GGuX5eBxnpbVeQNjDhh5cSGpK1VksQ7GK7PjyJUhcqMi
+    secrets:
+      SIGNER_PRIVATE_KEY: ${{ secrets.SIGNER_PRIVATE_KEY }}
