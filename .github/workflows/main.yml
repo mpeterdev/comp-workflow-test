@@ -9,6 +9,6 @@ jobs:
       cli-version: 0.2.5
       deploy-account-address: mpmain2.near
       signer-account-address: mpmain2.near
-      signer-public-key: ed25519:GGuX5eBxnpbVeQNjDhh5cSGpK1VksQ7GK7PjyJUhcqMi
+      signer-public-key: ed25519:DsdqCEMXjs9bYy3g7GEfT7AEz4s1YdLZMd6xahu7D7pX
     secrets:
       SIGNER_PRIVATE_KEY: ${{ secrets.SIGNER_PRIVATE_KEY }}
